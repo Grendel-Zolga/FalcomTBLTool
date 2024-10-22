@@ -34,8 +34,7 @@ def pack_array(input_data: list, schema_type: str, pointer_start: int, pointer_d
 
     if schema_type.startswith(("u", "s", "f")):
         length = int(schema_type[1:]) // 8
-        padding = pointer % length
-        for _ in range(padding):
+        while pointer % length != 0:
             pointer += 1
             pointer_data += b"\0"
 
