@@ -7,7 +7,7 @@ from lib.schema_util import update_schema
 from lib.ed9_parser import parse_table
 from lib.ed9_packer import pack_table
 
-GAME_TABLE = {"kuro": "ed9_Daybreak1", "kuro1": "ed9_Daybreak1", "daybreak": "ed9_Daybreak1", "daybreak1": "ed9_Daybreak1", "ed9_1": "ed9_Daybreak1"}
+GAME_TABLE = {"kuro": "ed9_Daybreak1", "kuro1": "ed9_Daybreak1", "daybreak": "ed9_Daybreak1", "daybreak1": "ed9_Daybreak1", "ed9_1": "ed9_Daybreak1", "ysx": "ys_X", "ys_x": "ys_X"}
 
 
 class ArgumentParser(argparse.ArgumentParser):
